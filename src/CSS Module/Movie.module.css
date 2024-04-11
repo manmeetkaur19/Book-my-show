@@ -1,0 +1,180 @@
+.p{
+    margin:'10px';
+    color:'white';
+    margin-left:'15px';
+    padding-top: "20px";
+}
+
+.r{
+    margin-right: "5%";
+}
+.events{
+    margin: 5px;
+    word-break: break-word;
+    color:black;
+    font-family: arial;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.17;
+    margin-left: 6%; 
+    padding-top: 2%;
+}
+.events1{
+    margin: 5px;
+    word-break: break-word;
+    color:black;
+    font-family: arial;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.17;
+    margin-left: 6%; 
+    padding-top: 5%;
+}
+
+.v{
+    word-break: break-word;
+    color: rgb(102, 102, 102);
+    font-family: arial;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.d{
+    font-style: normal;
+    font-weight:500;
+    font-size: 18px;
+    color: rgb(34, 34, 34);
+    padding-top:5%; 
+}
+.stext{
+    width: 90%;
+    border: none;
+    background: white;
+    box-shadow: none;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+    font-weight: 460;
+    outline: 0px;
+    /* min-width:200px; */
+  
+}
+.h{
+    min-width:  15px;
+    min-height: 15px;
+
+}
+.signin{
+     color: rgb(255, 255, 255);
+    /* font-size: 0.70rem; */
+    font-size: 0.70rem;
+      /* height: 20px;  */
+     /* line-height: 29px;  */
+    width: 65px;                                                                                  /* button width  */
+    text-align:center;
+    justify-content: center;
+    border-radius: 4px;
+    display:block;
+    margin-left: 25px;
+
+}
+.head{
+    display:flex; 
+    height: 40px;
+    width: 100%;
+    -webkit-box-align: center; 
+    align-items: center;
+     -webkit-box-pack: start;
+    justify-content: flex-start;
+    background: rgb(245, 245, 245); 
+    overflow-x: auto;
+    white-space: nowrap; 
+    scrollbar-width: none; 
+}
+
+.y{
+font-size: 14px;
+    cursor: pointer;
+    /* padding: 0px 10px;  */
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    color:black;
+}
+.y2{ 
+    font-size: 13px;
+    cursor: pointer;
+    padding: 0px 12px;
+    text-decoration: none;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    font-weight: 500;
+    color: black;
+}
+.inner{
+    min-height: 480px;
+    width: 100%;
+    padding-top: 32px 0px;
+    /* -webkit-box-align: center;  */
+    align-items: center;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position:  center;
+     /* background-color: rgb(26, 26, 26);    */
+    position: relative;
+    margin: 0px auto;
+    max-width: 1440px;
+    background-image:url('https://assets-in.bmscdn.com/discovery-catalog/events/et00368739-wqbvtqnckw-landscape.jpg');
+}
+.t{
+    font-style: normal;
+    font-weight:500;
+    font-size: 18px;
+    color:white;
+    padding-top:5%; 
+}
+.t2{
+    
+    word-break: break-word;
+    color: white;
+    font-family: arial;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.search{
+    color: rgb(153, 153, 153);
+    font-weight: 500;
+    margin-left:10px ;
+}
+.concard{
+    margin-top:10px;
+    width:55%;
+    height:20%;
+    margin-left:0px;
+
+}
+
+.asr{
+    font-size: 14px;
+    padding-top: 10px; 
+    margin-left: 73%;
+     max-width: 90px;  
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    position:absolute;  
+}
+
+
+.head1{
+    padding-top: "10px";
+}
