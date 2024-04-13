@@ -1,3 +1,4 @@
+
 import React from 'react';
 import {  Image,Card,Row,Col, Container, ListGroup } from 'react-bootstrap';
 import style from './CSS Module/Movie.module.css';

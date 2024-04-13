@@ -10,11 +10,6 @@ export default function Head() {
        <Container  >  
         <Nav className={style.y}> 
          <Nav.Link href="#">Movies</Nav.Link>
-       <Nav.Link>Stream</Nav.Link>
-      <Nav.Link href="#features">Events</Nav.Link>
-    <Nav.Link href="#pricing">Plays</Nav.Link>
-    <Nav.Link href="#pricing">Sports</Nav.Link>
-    <Nav.Link href="#pricing">Activities</Nav.Link>
           </Nav>
         
         

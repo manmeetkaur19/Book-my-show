@@ -1,14 +1,5 @@
-.p{
-    margin:'10px';
-    color:'white';
-    margin-left:'15px';
-    padding-top: "20px";
-}
-
-.r{
-    margin-right: "5%";
-}
-.events{
+ /* movie css */
+ .events{
     margin: 5px;
     word-break: break-word;
     color:black;
@@ -30,7 +21,14 @@
     margin-left: 6%; 
     padding-top: 5%;
 }
-
+.pics{
+    min-width:16px;
+   }
+   .card{
+       width:'110%';
+       height: '110%';
+       border-radius: 10px;
+   }
 .v{
     word-break: break-word;
     color: rgb(102, 102, 102);
@@ -51,6 +49,7 @@
     color: rgb(34, 34, 34);
     padding-top:5%; 
 }
+/* end movie css */
 .stext{
     width: 90%;
     border: none;
@@ -114,21 +113,24 @@ font-size: 14px;
     font-weight: 500;
     color: black;
 }
+/* inner ui css starts */
 .inner{
     min-height: 480px;
-    width: 100%;
-    padding-top: 32px 0px;
-    /* -webkit-box-align: center;  */
+    width: 100%; 
+    margin-top: 32px;
+     /* -webkit-box-align: center;   */
     align-items: center;
     display: flex;
     background-repeat: no-repeat;
     background-position:  center;
-     /* background-color: rgb(26, 26, 26);    */
+     /* background-color: rgb(26, 26, 26);     */
     position: relative;
     margin: 0px auto;
     max-width: 1440px;
-    background-image:url('https://assets-in.bmscdn.com/discovery-catalog/events/et00368739-wqbvtqnckw-landscape.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
+
+
 .t{
     font-style: normal;
     font-weight:500;
@@ -177,4 +179,9 @@ font-size: 14px;
 
 .head1{
     padding-top: "10px";
+}
+.star{
+    margin-left: 20px;
+    /* margin-right: 40px; */
+    /* padding-left: 2px; */
 }

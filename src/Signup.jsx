@@ -1,8 +1,9 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
-export default function Signin() {
+export default function Signup() {
   return (
  <>
   <Card  style={{marginTop:'8%',marginLeft:'30%',marginRight:'30%'}}>
@@ -19,14 +20,14 @@ export default function Signin() {
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Password</Form.Label> 
-        <Form.Control type="password" placeholder="Password" />
+        <Form.Control type="password" name="password" placeholder="Password" />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
-      </Form.Group>
-      <Button variant="primary" type="submit">
+      <a href="/Login">Don't have an account,Login</a>
+      <Link to="/Movies">
+      <Button   variant="primary float-end" type="submit"  size="sm">
         Submit
       </Button>
+      </Link>
        </Form>
        </Card.Body>
       </Card>

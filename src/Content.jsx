@@ -3,13 +3,18 @@ import {  Card, Col, Row } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import style from './CSS Module/Movie.module.css';
 import Button from 'react-bootstrap/Button';
-import { Link } from 'react-router-dom';
+import { Link ,Form} from 'react-router-dom';
 import Head from './Head';
 import Movies from './Movies';
 import Inner from './Inner';
+import Trailer from './Trailer';
+
+
+
 
 
 export default function Content() {
+  
   return (
     <>
     <Container style={{height:'60px'}}>
@@ -28,7 +33,14 @@ export default function Content() {
 </svg>
 </Col>
 <Col xs={10}>
-      <span className={style.stext}>Search for Movies, Events, Plays, Sports and Activities</span>
+      {/* <sp className={style.stext}>Search for Movies </span> */}
+      {/* <Form.Control
+                  type="text"
+                  placeholder="Search courses..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  style={{ marginBottom: "10px" }}
+                /> */}
      </Col>
      </Row>
     </Card>
@@ -41,8 +53,8 @@ export default function Content() {
   />
 </svg>
  
-<Link to="/Signin">
-  <Button  className={style.signin} variant='danger' size='sm' onClick={()=>{}}>Sign in</Button>{' '} </Link>
+<Link to="/Signup">
+  <Button  className={style.signin} variant='danger' size='sm' onClick={()=>{}}>Sign Up</Button>{' '} </Link>
     
   <svg xmlns="http://www.w3.org/2000/svg"   width="50" height="22" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"  style={{paddingLeft:'24px'}} onClick={()=>{}}>
   <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -54,7 +66,9 @@ export default function Content() {
 </Container>
 <Head/>
 <Movies/>
-{/* <Inner/> */}
+ <Inner/>
+ <Trailer/> 
+ 
 </>
                               
         
