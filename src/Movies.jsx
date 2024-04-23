@@ -2,82 +2,166 @@ import {  Col, Container,  Row } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import style from './CSS Module/Movie.module.css';
 import Carousel from 'react-bootstrap/Carousel';
+import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import { Form } from 'react-bootstrap';
 
 
 
- export default function Movies() {
-  const [searchQuery, setSearchQuery]=useState("");
-  const filterCourses = (name) => {
-    
-     return name.toLowerCase().includes(searchQuery.toLowerCase());
+
+
+ export default function Movies({ searchQuery }) {
+
+  
+ 
+  const filterMovies = (name) => {
+    return name.toLowerCase().includes(searchQuery.toLowerCase());
   };
+
   const docs=[
     {
       mname:"Jatt Nu Chudail Takri",
-      img:"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ny45LzEwICAxMksgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00368739-qqquklesel-portrait.jpg",
-      desc:"Comedy/Horror"
+      img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/jatt-nuu-chudail-takri-et00368739-1710413132.jpg",
+      desc:"Comedy/Horror",
+     link:"https://www.youtube.com/watch?v=D4LyZPfnznE",
 
     },
     {
-      mname:"Yodha",
-      img:"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC4yLzEwICAxNS4zSyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00318073-vnxhzuzaak-portrait.jpg",
-      desc:"Action Thriller"
+      mname:"Pind Aala School",
+      img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/pind-aala-school-et00391164-1710832824.jpg",
+      desc:"Comedy/Drama",
+      link:"https://www.youtube.com/watch?v=COM14tdK86E"
+      
     },
     {
       mname:"Blackia2",
-      img:"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC8xMCAgNjI0IFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00366835-hywfldcdnm-portrait.jpg",
-      desc:"Action/Crime/Drama"
+      img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/blackia-2-et00366835-1691663197.jpg",
+      desc:"Action/Crime/Drama",
+      link:"https://www.youtube.com/watch?v=1RCLn2iIXGA&t=44s",
     },
     {
-      mname:"Shaitaan",
-      img:"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC8xMCAgODEuOEsgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00384234-namrszxlsp-portrait.jpg",
-      desc:"Thriller"
+      mname:"Shinda Shinda No Papa",
+      img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/shinda-shinda-no-papa-et00337909-1689944126.jpg",
+      desc:"Comedy/Drama",
+       link:"https://www.youtube.com/watch?v=Vbq1jflpHyU",
     },
     {
-      mname:"Kung Fu Panda 4 ",
-      img:"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC41LzEwICAxMC42SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00379741-rxxpavyhrq-portrait.jpg",
-      desc:"Action/Adventure/Comedy"
+      mname:"Rose Rosy Te Gulab",
+      img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/rose-rosy-te-gulab-et00371725-1712125650.jpg",
+      desc:"Drama",
+      link:"https://www.youtube.com/watch?v=PNSJ4IyShJU",
     },
   ]
-  return (
+  const soon=[
+    {
+      mname:"Carry On Jatta 3",
+      img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/carry-on-jatta-3-et00311622-1680678095.jpg" ,
+     desc:"Comedy/Romantic",
+      link:"https://www.youtube.com/watch?v=QJ67Pf8PLdk",
+    },
+    {
+      mname:"Buhe Bariyan",
+      img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/buhe-bariyan-et00365497-1692352955.jpg",
+      desc:"comedy/Drama/Social",
+      link:"https://www.youtube.com/watch?v=ZH920IzGAu8",
+     
+    },
+    {
+      mname:"Jeonde Raho Bhoot Ji",
+      img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/jeonde-raho-bhoot-ji-et00391517-1710572571.jpg",
+      desc:'Comedy/Horror',
+      link:"https://www.youtube.com/watch?v=HYcOZT6B2io"
+    },
+{
+mname:"Crew",
+img:"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ni44LzEwICA2MC44SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00344265-mcnbkghxvr-portrait.jpg",
+desc:"UA",
+desc1:"Hindi",
+link:"https://www.youtube.com/watch?v="
+},
+
+{
+mname:"Godzilla x Kong: The New Empire",
+img:"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC43LzEwICA5MS45SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00358147-jvckjqrpzu-portrait.jpg",
+desc:"UA",
+desc1:"English",
+link:"https://www.youtube.com/watch?v="
+},
+{
+  mname:"Shayar",
+  img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/shayar-et00388568-1708691149.jpg",
+  desc:"Romantic/Drama",
+ desc1:"Punjabi",
+ link:"https://www.youtube.com/watch?v="
+ }
+]
+// function handleClick(e){
+//   setDataa(docs[(e.target.id)])
+//   console.log(dataa)
+//   // navigate("/Inner",{ state: {dataa} })
+//  }
+
+const navigate =useNavigate();
+ return (
     <>
       <div>
       <h2 className={style.events}> Recommended Movies</h2>
     </div>
-   
-    <Carousel>
+       
     <Container>
     <Row>
-
-    <Form.Control
-                  type="text"
-                  placeholder="Search for Movies"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  style={{ marginBottom: "10px" }}
-                />
+    
           {docs.map((value,index)=>{
-            if(filterCourses(docs.mname)){
+           if(filterMovies(value.mname)){
           return(
-            <Col key={index}   className={style.pics}>
+            <Col key={index} id={index}   className={style.pics} 
+            onClick={()=>{navigate("/Inner",{ state: {value} })}}> 
               <Card style={{borderRadius:'10px'}}>
-            <img className={style.card} src={value.img} alt={value.mname}></img>
+                <img className={style.card}  src={value.img} alt={value.mname}></img>
             </Card>
            <div>
            <div className={style.d}>{value.mname}</div>
             <desc className={style.v}>{value.desc}</desc>
+            
             </div>
             </Col>
-          );
-          }})};
+          )
+          }
+          return null;
+        })}
+         
       </Row>
-             </Container>
-           </Carousel>
-           </>
-);
- } 
+        </Container>
+          
+
+      <div>
+      <h2 className={style.events}>Coming Soon</h2>
+    </div>
+    <Carousel>
+<Container>
+<Row>
+  {soon.map((value,index)=>{
+          return(
+            <Col key={index}   className={style.pics}          
+               onClick={()=>{navigate("/Inner",{ state: {value} })}}>
+              <Card style={{borderRadius:'10px',height:'70%'}}>
+               <img className={style.card} src={value.img} alt={value.mname}></img>
+            </Card>
+           <div>
+           <div className={style.d}>{value.mname}</div>
+            <desc className={style.v}>{value.desc}</desc>
+            <desc className={style.v}>{value.desc1}</desc>
+  </div>
+</Col>
+)
+ })}
+ </Row>
+ </Container>
+ </Carousel>
+
+</>
+ )
+
+ }
  
         
             {/* <Col>

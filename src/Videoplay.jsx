@@ -6,10 +6,15 @@ export default function Videoplay() {
     const link=params.get("id");
     return (
       <>
-      <div>
-      <ReactPlayer url={'https://www.youtube.com/watch?v= '+link} />
+      <div style={{height:"100vh"}}>
+      <ReactPlayer width="100%" height="100%" url={link} />
       </div>
       
     </>
       )
 }
+
+
+
+
+
