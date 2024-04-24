@@ -3,7 +3,8 @@ import Card from 'react-bootstrap/Card';
 import style from './CSS Module/Movie.module.css';
 import Carousel from 'react-bootstrap/Carousel';
 import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import Footer from './Footer';
+
 
 
 
@@ -23,13 +24,15 @@ import { useState } from 'react';
       img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/jatt-nuu-chudail-takri-et00368739-1710413132.jpg",
       desc:"Comedy/Horror",
      link:"https://www.youtube.com/watch?v=D4LyZPfnznE",
+     minfo:"Jallaludin thinks all women are evil and refers to them as `chudail`. On a trip out with his married friend,  he convinces them to divorce their wives but to his surprise he falls in love with Rani.He gets married to her within a week, only to realise that she is actually a ghost (chudail).What will Jallaludin`s next plan of action be? Will he be able to fight against Rani or will he succumb to the fear?",
 
     },
     {
       mname:"Pind Aala School",
       img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/pind-aala-school-et00391164-1710832824.jpg",
       desc:"Comedy/Drama",
-      link:"https://www.youtube.com/watch?v=COM14tdK86E"
+      link:"https://www.youtube.com/watch?v=COM14tdK86E",
+      minfo:"The story of a master who has just taken charge of the school in Pind who tries different things to ensure that the children belonging to this school have a bright future.",
       
     },
     {
@@ -37,18 +40,21 @@ import { useState } from 'react';
       img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/blackia-2-et00366835-1691663197.jpg",
       desc:"Action/Crime/Drama",
       link:"https://www.youtube.com/watch?v=1RCLn2iIXGA&t=44s",
+      minfo:"Blackia 2 is the story of Gama, a boy from a small village situated at the farthest border of India and Pakistan who rises to become one of the biggest and dreadful smugglers/mafias and even develops a stronghold in big cities.",
     },
     {
       mname:"Shinda Shinda No Papa",
       img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/shinda-shinda-no-papa-et00337909-1689944126.jpg",
       desc:"Comedy/Drama",
        link:"https://www.youtube.com/watch?v=Vbq1jflpHyU",
+       minfo:"Shinda Shinda No Papa is a Punjabi movie starring Gippy Grewal and Shinda Grewal in prominent roles. It is directed by Amarpreet Chhabra forming part of the crew.",
     },
     {
       mname:"Rose Rosy Te Gulab",
       img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/rose-rosy-te-gulab-et00371725-1712125650.jpg",
       desc:"Drama",
       link:"https://www.youtube.com/watch?v=PNSJ4IyShJU",
+      minfo:"Gulab is fed up with his bachelorhood and follows the path of manifestation suggested by his friends but finds himself stuck between two girls- Rose and Rosy. Who will he choose or will he get rejected by both?",
     },
   ]
   const soon=[
@@ -157,6 +163,8 @@ const navigate =useNavigate();
  </Row>
  </Container>
  </Carousel>
+<Footer/>
+
 
 </>
  )

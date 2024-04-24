@@ -13,6 +13,7 @@ import { Form } from 'react-bootstrap';
 
 
 
+
 export default function Content() {
   const [searchQuery, setSearchQuery] = useState("");
   
@@ -58,6 +59,7 @@ export default function Content() {
 </Container>
  <Head/> 
 <Movies searchQuery={searchQuery}/>
+
 
 </>
 )

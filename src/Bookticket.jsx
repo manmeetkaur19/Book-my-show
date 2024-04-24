@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import style from './CSS Module/Ticket.module.css';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
+import Footer from './Footer';
 
 
 
@@ -38,7 +39,7 @@ export default function Bookticket() {
 
  
   
-  
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
 <Card style={{height:'250px'}}>
@@ -224,11 +225,68 @@ width:'40px',
   <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
 </svg>
 <label style={{paddingLeft:'5px',fontSize:'12px',color:'green',fontWeight:'450'}}>M-Ticket</label>
+  
+
 <Card style={{width:'100px',height:'40px',textAlign:'center',paddingTop:'8px',fontSize:'14px',color:"green",display:'inline-block',marginLeft:'210px'}}>
-<div >02:10 PM</div>
+<div onClick={() => setIsOpen((prev) => !prev)} >02:10 PM</div>
+{isOpen && (
+
+  <Row>
+     <Col xs={12}>
+    <Card  style={{ textAlign: "center"}}>
+      <Link to="/Gpay" style={{textDecoration:'none',color:"black"}}>
+   <div>Rs.190.00</div>
+<div className={style.seat} >NORMAL</div>
+<div className={style.available}>Available</div>
+
+ 
+  
+<div>Rs.200.00</div>
+<div className={style.seat} >EXECUTIVE</div>
+<div  className={style.available}>Available</div>
+
+
+
+
+<div>Rs.350.00</div>
+<div className={style.seat} >VIP</div>
+<div  className={style.available}>Available</div>
+</Link>
 </Card>
+</Col>
+</Row>
+)}
+</Card>
+
 <Card style={{width:'100px',height:'40px',textAlign:'center',paddingTop:'8px',fontSize:'14px',color:"green",display:'inline-block',marginLeft:'20px'}}>
-<div >04:30 PM</div>
+<div onClick={() => setIsOpen((prev) => !prev)}>04:10 PM</div>
+{isOpen && (
+
+  <Row>
+     <Col xs={12}>
+    <Card  style={{ textAlign: "center"}}>
+      <Link to="/Gpay" style={{textDecoration:'none',color:"black"}}>
+   <div>Rs.170.00</div>
+<div className={style.seat} >NORMAL</div>
+<div className={style.available}>Available</div>
+
+ 
+  
+<div>Rs.210.00</div>
+<div className={style.seat} >EXECUTIVE</div>
+<div  className={style.available}>Available</div>
+
+
+
+
+<div>Rs.330.00</div>
+<div className={style.seat} >VIP</div>
+<div  className={style.available}>Available</div>
+</Link>
+</Card>
+</Col>
+</Row>
+)}
 </Card>
 </div >
 <div style={{marginTop:'10px'}}>
@@ -239,10 +297,56 @@ width:'40px',
 </div>
 </td>
     </tr>
+    <tr>
+      <td>
+      <h6 style={{display:'inline-block',fontSize:'13px',marginLeft:'5px',width:"214px"}}>Movietime: Novelty Mall Lawrence
+      Road,Amritsar</h6>
+        <img src="https://in.bmscdn.com/moviemode/cinemaphotoshowcase/info.png " height={15} style={{paddingLeft:'25px',marginBottom:'30px'}}></img>
+        <div style={{display:'inline-block',fontSize:'12px',paddingLeft:'5px',color:'grey',position:'absolute'}}>INFO</div>
+        <div>
+        <svg xmlns="http://www.w3.org/2000/svg" widt="16" height="16" fill="green" class="bi bi-phone" viewBox="0 0 16 16" style={{marginLeft:'40px'}}>
+  <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+  <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+</svg>
+<label style={{paddingLeft:'5px',fontSize:'12px',color:'green',fontWeight:'450'}}>M-Ticket</label>
+<Card style={{width:'100px',height:'40px',textAlign:'center',paddingTop:'8px',fontSize:'14px',color:"green",display:'inline-block',marginLeft:'210px'}}>
+<div onClick={() => setIsOpen((prev) => !prev)} >02:30 PM</div>
+{isOpen && (
+
+  <Row>
+     <Col xs={12}>
+    <Card  style={{ textAlign: "center"}}>
+      <Link to="/Gpay" style={{textDecoration:'none',color:"black"}}>
+ <div>Rs.140.00</div>
+<div className={style.seat} >GOLD</div>
+<div  className={style.available}>Available</div>
+
+<div>Rs.140.00</div>
+<div className={style.seat} >PLATINUM</div>
+<div  className={style.available}>Available</div>
+</Link>
+</Card>
+</Col>
+</Row>
+)}
+</Card>
+
+</div>
+<div style={{marginTop:'10px'}}>
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" fill="orange" class="bi bi-dot" viewBox="0 0 16 16" style={{marginLeft:'310px'}}>
+  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+</svg>
+<span style={{fontSize:'11px',color:"grey"}}>Non-cancellable</span>
+</div>
+
+      </td>
+    </tr>
 </tbody>
 </Table>
 </Card>
+<Footer/>
     </div>
+    
    
       )
 }

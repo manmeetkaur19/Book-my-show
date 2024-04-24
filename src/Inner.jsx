@@ -169,10 +169,7 @@ export default function Inner () {
               <div>
               <Row >
                <h3 style={{paddingTop:"510px",marginLeft:'40px',fontWeight:'500'}}>About the movie</h3>
-              <span className={style.aboutmovie}>Jallaludin thinks all women are evil and refers to them as `chudail`. On a trip out with his married friend, 
-               he convinces them to divorce their wives but to his surprise he falls in love with Rani.
-                He gets married to her within a week, only to realise that she is actually a ghost (chudail). What will Jallaludin`s next plan of action be? Will he be able to fight against Rani or will he succumb to the fear?</span>
-                
+              <span className={style.aboutmovie}>{data.minfo}</span>
                </Row>
                
                 <div style={{marginTop:'35px',marginLeft:'40px'}}>

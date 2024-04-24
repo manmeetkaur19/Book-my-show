@@ -47,4 +47,23 @@
     background-color:black;
     margin-top: 20px;
     padding-top: 25px;
+    height:40vh;
   }
+.ftext{
+    padding-top: 25px;
+    font-size: 11px;
+    color: rgb(102, 102, 102);
+    text-align: center;
+    line-height: 20px;
+    }
+    /* movie timings price css */
+    .seat{
+        font-size: 10px;
+    }
+    .available{
+      font-size: 10px;
+      color:darkturquoise;
+      font-weight: 400;
+    }
+
+  

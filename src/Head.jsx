@@ -17,10 +17,10 @@ export default function Head() {
         </Nav>
 
         <Nav className={style.y2}>
-            <Nav.Link>Listyourshow</Nav.Link>
-      <Nav.Link href="">Corporates</Nav.Link>
-    <Nav.Link href="#">Offers</Nav.Link>
-    <Nav.Link href="#pricing">GiftCards</Nav.Link>
+          <center>
+            <Nav.Link href="/Gpay">Google Pay</Nav.Link>
+            </center>
+      
    </Nav>
           </Container>
       </Navbar>

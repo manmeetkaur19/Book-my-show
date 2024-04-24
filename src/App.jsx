@@ -9,6 +9,7 @@ import Videoplay from './Videoplay'
 import Content from './Content'
 import Bookticket from './Bookticket'
 import Footer from './Footer'
+import Gpay from './Gpay'
 
 
 export default function App() {
@@ -25,6 +26,8 @@ export default function App() {
       <Route path='/Bookticket'  element={<Bookticket/>}/>
       <Route path='/Videoplay'  element={<Videoplay/>}/>
       <Route path='/Footer'  element={<Footer/>}/>
+      <Route path='/Gpay'  element={<Gpay/>}/>
+
       
     </Routes>
     </BrowserRouter>
