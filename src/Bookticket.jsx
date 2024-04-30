@@ -36,7 +36,18 @@ export default function Bookticket() {
   const handlePriceChange = (event) => {
     setPriceRange(event.target.value);
   };
+  const [isOpen1, setIsOpen1] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
 
+  const toggleCard = (cardNumber) => {
+      if (cardNumber === 1) {
+          setIsOpen1((prev) => !prev);
+          setIsOpen2(false); // Close the other card
+      } else {
+          setIsOpen2((prev) => !prev);
+          setIsOpen1(false); // Close the other card
+      }
+  };
  
   
   const [isOpen, setIsOpen] = useState(false);
@@ -234,7 +245,7 @@ width:'40px',
   <Row>
      <Col xs={12}>
     <Card  style={{ textAlign: "center"}}>
-      <Link to="/Gpay" style={{textDecoration:'none',color:"black"}}>
+      <Link to="/Googlepay" style={{textDecoration:'none',color:"black"}}>
    <div>Rs.190.00</div>
 <div className={style.seat} >NORMAL</div>
 <div className={style.available}>Available</div>
@@ -259,13 +270,15 @@ width:'40px',
 </Card>
 
 <Card style={{width:'100px',height:'40px',textAlign:'center',paddingTop:'8px',fontSize:'14px',color:"green",display:'inline-block',marginLeft:'20px'}}>
-<div onClick={() => setIsOpen((prev) => !prev)}>04:10 PM</div>
-{isOpen && (
+<div onClick={() => toggleCard(1)}>04:10 PM</div>
+                {isOpen1 && (
+/* <div onClick={() => setIsOpen((prev) => !prev)}>04:10 PM</div>
+{isOpen && ( */
 
   <Row>
      <Col xs={12}>
     <Card  style={{ textAlign: "center"}}>
-      <Link to="/Gpay" style={{textDecoration:'none',color:"black"}}>
+      <Link to="/Googlepay" style={{textDecoration:'none',color:"black"}}>
    <div>Rs.170.00</div>
 <div className={style.seat} >NORMAL</div>
 <div className={style.available}>Available</div>
@@ -310,13 +323,14 @@ width:'40px',
 </svg>
 <label style={{paddingLeft:'5px',fontSize:'12px',color:'green',fontWeight:'450'}}>M-Ticket</label>
 <Card style={{width:'100px',height:'40px',textAlign:'center',paddingTop:'8px',fontSize:'14px',color:"green",display:'inline-block',marginLeft:'210px'}}>
-<div onClick={() => setIsOpen((prev) => !prev)} >02:30 PM</div>
-{isOpen && (
-
+{/* <div onClick={() => setIsOpen((prev) => !prev)} >02:30 PM</div>
+{isOpen && ( */}
+<div onClick={() => toggleCard(2)}>04:10 PM</div>
+                {isOpen2 && (
   <Row>
      <Col xs={12}>
     <Card  style={{ textAlign: "center"}}>
-      <Link to="/Gpay" style={{textDecoration:'none',color:"black"}}>
+      <Link to="/Googlepay" style={{textDecoration:'none',color:"black"}}>
  <div>Rs.140.00</div>
 <div className={style.seat} >GOLD</div>
 <div  className={style.available}>Available</div>

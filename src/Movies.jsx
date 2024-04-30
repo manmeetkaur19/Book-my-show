@@ -4,10 +4,7 @@ import style from './CSS Module/Movie.module.css';
 import Carousel from 'react-bootstrap/Carousel';
 import { useNavigate } from 'react-router-dom';
 import Footer from './Footer';
-
-
-
-
+import StarRatingApp from './StarRatingApp';
 
 
  export default function Movies({ searchQuery }) {
@@ -25,15 +22,19 @@ import Footer from './Footer';
       desc:"Comedy/Horror",
      link:"https://www.youtube.com/watch?v=D4LyZPfnznE",
      minfo:"Jallaludin thinks all women are evil and refers to them as `chudail`. On a trip out with his married friend,  he convinces them to divorce their wives but to his surprise he falls in love with Rani.He gets married to her within a week, only to realise that she is actually a ghost (chudail).What will Jallaludin`s next plan of action be? Will he be able to fight against Rani or will he succumb to the fear?",
-
-    },
+     mtime:"2h 34m",
+    cinema:"In Cinemas",
+    date:"15 March,2024",
+  },
     {
       mname:"Pind Aala School",
       img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/pind-aala-school-et00391164-1710832824.jpg",
       desc:"Comedy/Drama",
       link:"https://www.youtube.com/watch?v=COM14tdK86E",
       minfo:"The story of a master who has just taken charge of the school in Pind who tries different things to ensure that the children belonging to this school have a bright future.",
-      
+     mtime:"",
+     cinema:"Releasing on 3 May,2024",
+     date:"",
     },
     {
       mname:"Blackia2",
@@ -41,6 +42,9 @@ import Footer from './Footer';
       desc:"Action/Crime/Drama",
       link:"https://www.youtube.com/watch?v=1RCLn2iIXGA&t=44s",
       minfo:"Blackia 2 is the story of Gama, a boy from a small village situated at the farthest border of India and Pakistan who rises to become one of the biggest and dreadful smugglers/mafias and even develops a stronghold in big cities.",
+    mtime:"2h 14m",
+    cinema:"No Watch Options",
+    date:"8 March,2024",
     },
     {
       mname:"Shinda Shinda No Papa",
@@ -48,14 +52,22 @@ import Footer from './Footer';
       desc:"Comedy/Drama",
        link:"https://www.youtube.com/watch?v=Vbq1jflpHyU",
        minfo:"Shinda Shinda No Papa is a Punjabi movie starring Gippy Grewal and Shinda Grewal in prominent roles. It is directed by Amarpreet Chhabra forming part of the crew.",
-    },
+       mtime:"",
+       cinema:"Releasing on 10 May,2024",
+       date:"",
+      },
     {
       mname:"Rose Rosy Te Gulab",
       img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/rose-rosy-te-gulab-et00371725-1712125650.jpg",
       desc:"Drama",
       link:"https://www.youtube.com/watch?v=PNSJ4IyShJU",
       minfo:"Gulab is fed up with his bachelorhood and follows the path of manifestation suggested by his friends but finds himself stuck between two girls- Rose and Rosy. Who will he choose or will he get rejected by both?",
+     mtimw:"",
+     cinema:"Releasing on 24 May,2024",
+     date:"",
+
     },
+
   ]
   const soon=[
     {
@@ -63,42 +75,59 @@ import Footer from './Footer';
       img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/carry-on-jatta-3-et00311622-1680678095.jpg" ,
      desc:"Comedy/Romantic",
       link:"https://www.youtube.com/watch?v=QJ67Pf8PLdk",
+      minfo:"Advocate Dhillon`s son, Jass, is in love with Meet but her brothers get in a tussle with Adv. Dhillon. As a result, Adv. Dhillon rejects Meet`s hand in marriage. Left with no option, Jass weaves a madhouse plan to propose to his friend, Goldy`s wife, Diljit. Will the plan work?",
+    mtime:"2h 16m",
+    cinema:"No Watch Options",
+    date:"29 June,2023",
     },
     {
       mname:"Buhe Bariyan",
       img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/buhe-bariyan-et00365497-1692352955.jpg",
       desc:"comedy/Drama/Social",
       link:"https://www.youtube.com/watch?v=ZH920IzGAu8",
-     
+     minfo:"Buhe Bariyan follows a group of women, Bhuro and gang, fighting against patriarchy and societal values. Prem Kaur, a new police officer in town, uncovers dark secrets and becomes a beacon of hope for the womenfolk.",
+    mtime:"2h 10m",
+    cinema:"No Watch Options",
+    date:'15 Sep,2023',
     },
     {
       mname:"Jeonde Raho Bhoot Ji",
       img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/jeonde-raho-bhoot-ji-et00391517-1710572571.jpg",
       desc:'Comedy/Horror',
-      link:"https://www.youtube.com/watch?v=HYcOZT6B2io"
+      link:"https://www.youtube.com/watch?v=HYcOZT6B2io",
+      minfo:"Jeonde Raho Bhoot Ji is a Punjabi movie starring Binnu Dhillon, Smeep Kang and B. N. Sharma in prominent roles. It is directed by Smeep Kang.",
+    mtime:"1h 52m",
+    cinema:"In Cinemas",
+    date:"12 Apr,2024",
     },
 {
-mname:"Crew",
-img:"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ni44LzEwICA2MC44SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00344265-mcnbkghxvr-portrait.jpg",
-desc:"UA",
-desc1:"Hindi",
-link:"https://www.youtube.com/watch?v="
+mname:"Furteela",
+img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/furteela-et00395966-1713939808.jpg",
+desc:"Drama,Romantic",
+link:"https://www.youtube.com/watch?v=WW1Q-wikGAw",
+minfo:"A dramatic college love story that explores love, heartbreak, and the journey to self-discovery.",
+mtime:"1h 55m",
+cinema:"Releasing on 26 Apr, 2024",
+date:"",
 },
 
 {
-mname:"Godzilla x Kong: The New Empire",
-img:"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC43LzEwICA5MS45SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00358147-jvckjqrpzu-portrait.jpg",
-desc:"UA",
-desc1:"English",
-link:"https://www.youtube.com/watch?v="
+mname:"Kaale Angrej",
+img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/kaale-angrej-et00395717-1713771997.jpg",
+desc:"Action,Thriller",
+link:"https://www.youtube.com/watch?v=a-Lo0wr_Nbs",
+minfo:"The story depicts the harassment, scams, and difficulties faced by people.",
+mtime:"2h 11m",
+cinema:"Releasing on 26 Apr, 2024",
+date:"",
 },
-{
-  mname:"Shayar",
-  img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/shayar-et00388568-1708691149.jpg",
-  desc:"Romantic/Drama",
- desc1:"Punjabi",
- link:"https://www.youtube.com/watch?v="
- }
+// {
+//   mname:"Shayar",
+//   img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/shayar-et00388568-1708691149.jpg",
+//   desc:"Romantic/Drama",
+//  desc1:"Punjabi",
+//  link:"https://www.youtube.com/watch?v="
+//  }
 ]
 // function handleClick(e){
 //   setDataa(docs[(e.target.id)])
@@ -109,6 +138,7 @@ link:"https://www.youtube.com/watch?v="
 const navigate =useNavigate();
  return (
     <>
+  
       <div>
       <h2 className={style.events}> Recommended Movies</h2>
     </div>
@@ -119,21 +149,31 @@ const navigate =useNavigate();
           {docs.map((value,index)=>{
            if(filterMovies(value.mname)){
           return(
-            <Col key={index} id={index}   className={style.pics} 
-            onClick={()=>{navigate("/Inner",{ state: {value} })}}> 
+            <Col key={index} id={index}  className={style.pics} > 
               <Card style={{borderRadius:'10px'}}>
+                <div  onClick={()=>{navigate("/Inner",{ state: {value} })}}>
                 <img className={style.card}  src={value.img} alt={value.mname}></img>
+                </div>
             </Card>
+            
            <div>
-           <div className={style.d}>{value.mname}</div>
+            <div className={style.d}>{value.mname}</div>
             <desc className={style.v}>{value.desc}</desc>
             
             </div>
+        <StarRatingApp/>
+
             </Col>
-          )
-          }
-          return null;
-        })}
+           
+
+            
+             )
+           }
+          
+            return null;
+          })}
+       
+           
          
       </Row>
         </Container>
@@ -145,18 +185,21 @@ const navigate =useNavigate();
     <Carousel>
 <Container>
 <Row>
+
+  
   {soon.map((value,index)=>{
           return(
-            <Col key={index}   className={style.pics}          
-               onClick={()=>{navigate("/Inner",{ state: {value} })}}>
-              <Card style={{borderRadius:'10px',height:'70%'}}>
-               <img className={style.card} src={value.img} alt={value.mname}></img>
+            <Col key={index}   className={style.pics}          >
+              <Card style={{borderRadius:'10px'}}>
+               <div onClick={()=>{navigate("/Inner",{ state: {value} })}}>
+               <img className={style.card} src={value.img}></img>
+               </div>
             </Card>
            <div>
-           <div className={style.d}>{value.mname}</div>
+                 <div className={style.d}>{value.mname}</div>
             <desc className={style.v}>{value.desc}</desc>
-            <desc className={style.v}>{value.desc1}</desc>
   </div>
+  <StarRatingApp/>
 </Col>
 )
  })}

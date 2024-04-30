@@ -18,10 +18,9 @@ export default function Head() {
 
         <Nav className={style.y2}>
           <center>
-            <Nav.Link href="/Gpay">Google Pay</Nav.Link>
+            <Nav.Link href="/Googlepay">Google Pay</Nav.Link>
             </center>
-      
-   </Nav>
+      </Nav>
           </Container>
       </Navbar>
       </>

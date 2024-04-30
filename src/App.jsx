@@ -9,7 +9,11 @@ import Videoplay from './Videoplay'
 import Content from './Content'
 import Bookticket from './Bookticket'
 import Footer from './Footer'
-import Gpay from './Gpay'
+import Googlepay from './Googlepay'
+import Welcome from './Welcome'
+import StarRatingApp from './StarRatingApp'
+import Privacy from './Privacy'
+import Aboutus from './Aboutus'
 
 
 export default function App() {
@@ -17,7 +21,8 @@ export default function App() {
     <>
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Content/>}/>
+      <Route path="/" element={<Welcome/>}/>
+      <Route path="/Content" element={<Content/>}/>
       <Route path="/Head" element={<Head/>}/>
       <Route path="/Signup" element={<Signup/>}/>
       <Route path="/Movies" element={<Movies/>}/>
@@ -26,7 +31,15 @@ export default function App() {
       <Route path='/Bookticket'  element={<Bookticket/>}/>
       <Route path='/Videoplay'  element={<Videoplay/>}/>
       <Route path='/Footer'  element={<Footer/>}/>
-      <Route path='/Gpay'  element={<Gpay/>}/>
+      <Route path='/Googlepay'  element={<Googlepay/>}/>
+      <Route path='/StarRatingApp'  element={<StarRatingApp/>}/>
+      <Route path='/Privacy'  element={<Privacy/>}/>
+      <Route path='/Aboutus'  element={<Aboutus/>}/>
+
+
+     
+
+
 
       
     </Routes>

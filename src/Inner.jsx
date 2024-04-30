@@ -25,47 +25,43 @@ export default function Inner () {
   
   const cast=[
     {
-      img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/gippy-grewal-18404-17-12-2021-06-58-27.jpg",
+      cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/gippy-grewal-18404-17-12-2021-06-58-27.jpg",
       name:"Gippy Grewal",
      role:"as Jallaludin ",
     },
     {
-      img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/sargun-mehta-1066825-30-01-2017-07-40-56.jpg",
+      cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/sargun-mehta-1066825-30-01-2017-07-40-56.jpg",
       name:"Sargun Mehta",
       role:"Actor",
     
     },
     {
-      img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/roopi-gill-1263571-24-12-2018-02-07-32.jpg",
+      cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/roopi-gill-1263571-24-12-2018-02-07-32.jpg",
       name:"Roopi Gill",
       role:"Actor",
     },
     {
-      img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/nirmal-rishi-8449-1710338767.jpg",
+      cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/nirmal-rishi-8449-1710338767.jpg",
       name:"Nirmal Rishi",
       role:"Actor",
     },
     {
-      img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/bn-sharma-2015555-1657102956.jpg",
+      cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/bn-sharma-2015555-1657102956.jpg",
       name:"BN Sharma",
       role:"Actor",
     },
     {
-      img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/ravinder-mand-2002800-26-09-2019-04-38-28.jpg",
+      cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/ravinder-mand-2002800-26-09-2019-04-38-28.jpg",
       name:"Ravinder Mand",
       role:"Actor",
     },
     {
-      img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/amrit-amby-2016054-03-01-2022-06-29-01.jpg",
+      cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/amrit-amby-2016054-03-01-2022-06-29-01.jpg",
       name:"Amrit Amby",
       role:"Actor",
 
     },
-    {
-      img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/deedar-gill-1263711-26-12-2018-03-54-41.jpg",
-      name:"Deedar Gill",
-      role:"Actor",
-    }
+    
   ]  
   const crew=[
     {
@@ -121,7 +117,7 @@ export default function Inner () {
             style={{display:'flex',borderTopRightRadius:'5px',borderTopLeftRadius:'5px',height:'55vh',width:'38vh'}}></Image>
             {/* </Link> */}
               <center>
-              <div style={{color:'white'}}>In Cinemas</div>
+              <div style={{color:'white'}}>{data.cinema}</div>
               </center>
               </Card>
               </Col>
@@ -150,11 +146,11 @@ export default function Inner () {
               <div className={style.lang}>Punjabi</div>
               </Col>
               </Row>
-              <div style={{color:'white',fontWeight:'400',paddingTop:'15px',paddingLeft:'10px'}}>2h 34m
+              <div style={{color:'white',fontWeight:'400',paddingTop:'15px',paddingLeft:'10px'}}>{data.mtime}
               <span className={style.dot}>.</span>
-              <span >Comedy, Horror</span>
+              <span >{data.desc}</span>
               <span className={style.dot}>.</span>
-              <span >15 March,2024</span>
+              <span >{data.date}</span>
               </div>
               <Link to="/Bookticket">
               <Col xs={4} style={{paddingTop:'23px'}}>
@@ -180,8 +176,8 @@ export default function Inner () {
                    return(
                     <Col key={index} style={{ display: 'inline-block', marginRight: '10px',marginLeft:"40px",marginTop:"15px" }}>
                    {/* onClick={()=>{navigate("/Inner",{ state: {value} })}} */}
-                      <Card style={{borderRadius:'100vh', height:'10rem',width:'10rem'}}>
-                        <img className={style.img}  src={value.img}></img>
+                      <Card style={{borderRadius:'100vh', height:'8rem',width:'8rem'}}>
+                        <img className={style.img}  src={value.cimg} ></img>
                     </Card>
                    <div>
                    <div className={style.name}>{value.name}</div>
@@ -199,7 +195,7 @@ export default function Inner () {
                 {crew.map((value,index)=>{
                    return(
                     <Col key={index} style={{ display: 'inline-block', marginRight: '10px',marginLeft:"40px",marginTop:"15px" }}>
-                      <Card style={{borderRadius:'100vh', height:'10rem',width:'10rem'}}>
+                      <Card style={{borderRadius:'100vh', height:'8rem',width:'8rem'}}>
                         <img className={style.img}  src={value.img}></img>
                     </Card>
                    <div>
