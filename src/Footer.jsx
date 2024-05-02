@@ -2,7 +2,6 @@ import React from 'react'
 import style from './CSS Module/Ticket.module.css';
 import {  Button, Col, Image, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Aboutus from './Aboutus';
 
 
 
