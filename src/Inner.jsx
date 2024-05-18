@@ -8,7 +8,10 @@ import Footer from './Footer';
 
 
 
+
 export default function Inner () {
+  
+
 
     // const selectedItem = docs[index];
   const state= useLocation();
@@ -23,78 +26,78 @@ export default function Inner () {
   
   const { id } = useParams();
   
-  const cast=[
-    {
-      cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/gippy-grewal-18404-17-12-2021-06-58-27.jpg",
-      name:"Gippy Grewal",
-     role:"as Jallaludin ",
-    },
-    {
-      cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/sargun-mehta-1066825-30-01-2017-07-40-56.jpg",
-      name:"Sargun Mehta",
-      role:"Actor",
+  // const cast=[
+  //   {
+  //     cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/gippy-grewal-18404-17-12-2021-06-58-27.jpg",
+  //     name:"Gippy Grewal",
+  //    role:"as Jallaludin ",
+  //   },
+  //   {
+  //     cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/sargun-mehta-1066825-30-01-2017-07-40-56.jpg",
+  //     name:"Sargun Mehta",
+  //     role:"Actor",
     
-    },
-    {
-      cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/roopi-gill-1263571-24-12-2018-02-07-32.jpg",
-      name:"Roopi Gill",
-      role:"Actor",
-    },
-    {
-      cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/nirmal-rishi-8449-1710338767.jpg",
-      name:"Nirmal Rishi",
-      role:"Actor",
-    },
-    {
-      cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/bn-sharma-2015555-1657102956.jpg",
-      name:"BN Sharma",
-      role:"Actor",
-    },
-    {
-      cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/ravinder-mand-2002800-26-09-2019-04-38-28.jpg",
-      name:"Ravinder Mand",
-      role:"Actor",
-    },
-    {
-      cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/amrit-amby-2016054-03-01-2022-06-29-01.jpg",
-      name:"Amrit Amby",
-      role:"Actor",
+  //   },
+  //   {
+  //     cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/roopi-gill-1263571-24-12-2018-02-07-32.jpg",
+  //     name:"Roopi Gill",
+  //     role:"Actor",
+  //   },
+  //   {
+  //     cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/nirmal-rishi-8449-1710338767.jpg",
+  //     name:"Nirmal Rishi",
+  //     role:"Actor",
+  //   },
+  //   {
+  //     cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/bn-sharma-2015555-1657102956.jpg",
+  //     name:"BN Sharma",
+  //     role:"Actor",
+  //   },
+  //   {
+  //     cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/ravinder-mand-2002800-26-09-2019-04-38-28.jpg",
+  //     name:"Ravinder Mand",
+  //     role:"Actor",
+  //   },
+  //   {
+  //     cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/amrit-amby-2016054-03-01-2022-06-29-01.jpg",
+  //     name:"Amrit Amby",
+  //     role:"Actor",
 
-    },
+  //   },
     
-  ]  
-  const crew=[
-    {
-      img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/vikas-vashisht-2018421-1651238508.jpg",
-      name:"Vikas Vashisht",
-      role:"Director",
-    },
-    {
-      img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/ravi-dubey-16823-26-04-2017-16-20-28.jpg",
-      name:"Ravi Dubey",
-      role:"Producer",
-    },
-    {
-      img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/jaani-iein082810-15-03-2022-12-35-35.jpg",
-      name:"Jaani",
-      role:"Producer",
-    },
-    {
-      img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/amberdeep-singh-1044303-13-01-2017-02-46-42.jpg",
-      name:"Amberdeep Singh",
-      role:"Writer",
-    },
-    {
-      img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/avvy-sra-2023169-1666937032.jpg",
-      name:"Avvy Sra",
-      role:"Musician",
-    },
-    {
-      img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/navneet-misser-1091749-1707479680.jpg",
-      name:"Navneet Misser",
-      role:"Cinematographer",
-    },
-    ]
+  // ]  
+  // const crew=[
+  //   {
+  //     img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/vikas-vashisht-2018421-1651238508.jpg",
+  //     name:"Vikas Vashisht",
+  //     role:"Director",
+  //   },
+  //   {
+  //     img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/ravi-dubey-16823-26-04-2017-16-20-28.jpg",
+  //     name:"Ravi Dubey",
+  //     role:"Producer",
+  //   },
+  //   {
+  //     img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/jaani-iein082810-15-03-2022-12-35-35.jpg",
+  //     name:"Jaani",
+  //     role:"Producer",
+  //   },
+  //   {
+  //     img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/amberdeep-singh-1044303-13-01-2017-02-46-42.jpg",
+  //     name:"Amberdeep Singh",
+  //     role:"Writer",
+  //   },
+  //   {
+  //     img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/avvy-sra-2023169-1666937032.jpg",
+  //     name:"Avvy Sra",
+  //     role:"Musician",
+  //   },
+  //   {
+  //     img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/navneet-misser-1091749-1707479680.jpg",
+  //     name:"Navneet Misser",
+  //     role:"Cinematographer",
+  //   },
+  //   ]
   
   return (
   <> 
@@ -117,7 +120,7 @@ export default function Inner () {
             style={{display:'flex',borderTopRightRadius:'5px',borderTopLeftRadius:'5px',height:'55vh',width:'38vh'}}></Image>
             {/* </Link> */}
               <center>
-              <div style={{color:'white'}}>{data.cinema}</div>
+              <div style={{color:'white',fontSize:"14px",paddingTop:'5px'}}>{data.cinema}</div>
               </center>
               </Card>
               </Col>
@@ -165,49 +168,50 @@ export default function Inner () {
               <div>
               <Row >
                <h3 style={{paddingTop:"510px",marginLeft:'40px',fontWeight:'500'}}>About the movie</h3>
-              <span className={style.aboutmovie}>{data.minfo}</span>
+              <span className={style.aboutmovie} style={{maxWidth:"1230px",width:"92%"}}>{data.minfo}</span>
                </Row>
                
                 <div style={{marginTop:'35px',marginLeft:'40px'}}>
                   <h3>Cast</h3>
                   </div>
                 <div  style={{overflowX: 'auto'}}>
-                {cast.map((value,index)=>{
+          
+                 {data.cast.map((data,index)=>{ 
                    return(
-                    <Col key={index} style={{ display: 'inline-block', marginRight: '10px',marginLeft:"40px",marginTop:"15px" }}>
+                    <Col   key={index} style={{ display: 'inline-block', marginRight: '10px',marginLeft:"40px",marginTop:"15px" }}>
                    {/* onClick={()=>{navigate("/Inner",{ state: {value} })}} */}
-                      <Card style={{borderRadius:'100vh', height:'8rem',width:'8rem'}}>
-                        <img className={style.img}  src={value.cimg} ></img>
+                       <Card style={{borderRadius:"100vh",height:'8rem',width:'8rem'}}>
+                        <img  src={data.cimg} alt={data.name} style={{borderRadius:"100vh"}}></img>
                     </Card>
                    <div>
-                   <div className={style.name}>{value.name}</div>
-                    <div  className={style.role}>{value.role}</div>
+                   <div className={style.name}>{data.name}</div>
+                    <div  className={style.role}>{data.role}</div>
                     
                     </div>
                     </Col>
-                    )
+                   )
                   })}
                    </div>
                    <div style={{marginTop:'35px',marginLeft:'40px'}}>
-                  <h3>Crew</h3>
-                  </div>
+                   <h3>Crew</h3> 
+                   </div>
                   <div  style={{overflowX: 'auto'}}>
-                {crew.map((value,index)=>{
+                {data.crew.map((data,index)=>{
                    return(
                     <Col key={index} style={{ display: 'inline-block', marginRight: '10px',marginLeft:"40px",marginTop:"15px" }}>
                       <Card style={{borderRadius:'100vh', height:'8rem',width:'8rem'}}>
-                        <img className={style.img}  src={value.img}></img>
+                        <img src={data.img} alt={data.name} style={{borderRadius:'100vh'}}></img>
                     </Card>
                    <div>
-                   <div className={style.name}>{value.name}</div>
-                    <div  className={style.role}>{value.role}</div>
+                   <div className={style.name}>{data.name}</div>
+                    <div  className={style.role}>{data.role}</div>
                     
                     </div>
                     </Col>
                     )
                   })}
                   </div>
-                  </div>
+                  </div> 
                   <Footer/>
                </> 
         

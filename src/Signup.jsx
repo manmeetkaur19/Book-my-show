@@ -87,6 +87,7 @@ const handleSubmit = async (e) => {
       const errors = {};
       // const { email, password, confirmPassword } = formData;
       const reg = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+  
       if(!username){errors.username='Username is required!';}
       if (!email) {errors.email = 'Email is required!';}
       if (password.length < 8) {
@@ -96,25 +97,25 @@ const handleSubmit = async (e) => {
       //   errors.password = 'Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character';
       // }
       if (password !== confirmPassword) {errors.confirmPassword = 'Password do not match';}
-  
+     
       return errors;
+      
     };
   
-
 
   return (
 <>
 <div data-aos="zoom-out"></div>
  <div className={style.body}>
-  <Card  style={{marginTop:'8%',marginLeft:'30%',marginRight:'30%',width:"450px",height:"360px"}}>
+  <Card style={{marginTop:'5%',marginLeft:'30%',marginRight:'30%',width:"450px",height:"510px"}}>
       <Card.Body>
         <center>
-      <h2>Sign Up </h2>
+      <h2>Sign Up For Your Account</h2>
       </center>
     <Form>
     <Form.Group className="mb-2" style={{fontSize:"15px",fontWeight:"450"}}>
-       <Form.Label>Username</Form.Label>  
-        <Form.Control style={{fontSize:"12px"}}  type="text"   
+     <strong> <Form.Label>Username</Form.Label>  </strong> 
+        <Form.Control style={{fontSize:"13px",fontWeight:"500"}}  type="text"   
        placeholder="Enter username" 
        onChange={(e)=>
         setUsername(e.target.value)} name = "username" id='username' required
@@ -123,8 +124,8 @@ const handleSubmit = async (e) => {
       </Form.Group>
 
       <Form.Group className="mb-2"  style={{fontSize:"15px",fontWeight:"450"}}>
-       <Form.Label>Email address</Form.Label>  
-        <Form.Control style={{fontSize:"12px"}}  type="email"   
+      <strong> <Form.Label>Email address</Form.Label>  </strong> 
+        <Form.Control style={{fontSize:"13px",fontWeight:"500"}}  type="email"   
          placeholder="Enter email" onChange={(e)=>
           setEmail(e.target.value)} name='email' id='email'
          required/>
@@ -135,23 +136,23 @@ const handleSubmit = async (e) => {
       </Form.Group>
 
       <Form.Group className="mb-2"   style={{fontSize:"15px",fontWeight:"450"}}>
-        <Form.Label>Password</Form.Label> 
-        <Form.Control style={{fontSize:"12px"}} type={showPassword ? 'text' : 'password'}
+        <strong> <Form.Label>Password</Form.Label> </strong>
+        <Form.Control style={{fontSize:"13px",fontWeight:"500"}} type={showPassword ? 'text' : 'password'}
         placeholder="Password"  onChange={(e)=>
-        setPassword(e.target.value)} name='password' id='password' required />
-        <Button onClick={togglePasswordVisibility}>
+        setPassword(e.target.value)} name='password' id='password' required /> 
+          <Button  variant ="light" onClick={togglePasswordVisibility}>
         <FontAwesomeIcon icon={showPassword ? faEye : faEyeSlash} />
         </Button>
-        {formErrors.password }
+      {formErrors.password }
       </Form.Group>
 
       <Form.Group className="mb-2"  style={{fontSize:"15px",fontWeight:"450"}}>
-        <Form.Label> Confirm password</Form.Label> 
-        <Form.Control style={{fontSize:"12px"}} type={showConfirmPassword ? 'text' : 'password'} 
+       <strong> <Form.Label> Confirm password</Form.Label> </strong>
+        <Form.Control style={{fontSize:"13px",fontWeight:"500"}} type={showConfirmPassword ? 'text' : 'password'} 
         placeholder="Confirm password"  onChange={(e)=>
         setConfirmPassword(e.target.value)} 
         id="confirmPassword" required/>
-        <Button onClick={toggleConfirmPasswordVisibility}>
+        <Button variant="light" onClick={toggleConfirmPasswordVisibility} >
         <FontAwesomeIcon icon={showPassword ? faEye : faEyeSlash} />
         </Button>
         {formErrors.confirmPassword}

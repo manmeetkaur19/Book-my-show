@@ -13,6 +13,7 @@ import Googlepay from './Googlepay'
 import Welcome from './Welcome'
 import StarRatingApp from './StarRatingApp'
 import Privacy from './Privacy'
+import Aboutus from './Aboutus'
 
 
 
@@ -34,14 +35,7 @@ export default function App() {
       <Route path='/Googlepay'  element={<Googlepay/>}/>
       <Route path='/StarRatingApp'  element={<StarRatingApp/>}/>
       <Route path='/Privacy'  element={<Privacy/>}/>
-      {/* <Route path='/Aboutus'  element={<Aboutus/>}/> */}
-
-
-     
-
-
-
-      
+      <Route path='/Aboutus'  element={<Aboutus/>}/>
     </Routes>
     </BrowserRouter>
   </>

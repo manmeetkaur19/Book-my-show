@@ -46,13 +46,18 @@ export default function Login() {
 
   return (
     <>
-    <Card>
-    <h3> Login For Your Account</h3> 
+    <Card style={{marginTop:'8%',marginLeft:'30%',marginRight:'30%',width:"430px",height:"300px"}}>
+      <Card.Body>
+        <center>
+         <h3> Login For Your Account</h3> 
+         </center>
+   
      <Form>
-
-      <Form.Group className="mb-3">
+      <Form.Group className="mb-2" style={{fontSize:"15px",fontWeight:"450",paddingTop:'5px'}}>
+      <strong>
         <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email"  
+        </strong>
+        <Form.Control type="email" placeholder="Enter email"  style={{fontSize:"13px",fontWeight:"500"}} 
         onChange={(value)=>{
           console.log(value.target.value);
           setEmail(value.target.value);
@@ -60,23 +65,26 @@ export default function Login() {
         id="email" required />
       </Form.Group>
 
-      <Form.Group className="mb-3">
+      <Form.Group className="mb-2" style={{fontSize:"15px",fontWeight:"450"}}>
+        <strong>
         <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Enter Password"
+        </strong>
+        <Form.Control type="password" placeholder="Enter Password" style={{fontSize:"13px",fontWeight:"500"}} 
         onChange={(value)=>{
           console.log(value.target.value);
           setPassword(value.target.value);
         }}
          id="password" required/>
       </Form.Group>
-      <a href="/Signup">Don't have an account?,Signup</a>
+      <a href="/Signup" style={{paddingTop:"8px"}}>Don't have an account?,Signup</a>
 
-      <Button variant="primary" type="submit"  onClick={handleSubmit}>
+      <Button variant="primary float-end" type="submit" size="sm" onClick={handleSubmit} >
         Login
       </Button>
       
 
     </Form>
+    </Card.Body>
     </Card>
     </>
   );

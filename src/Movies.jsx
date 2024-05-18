@@ -21,10 +21,55 @@ import StarRatingApp from './StarRatingApp';
       img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/jatt-nuu-chudail-takri-et00368739-1710413132.jpg",
       desc:"Comedy/Horror",
      link:"https://www.youtube.com/watch?v=D4LyZPfnznE",
-     minfo:"Jallaludin thinks all women are evil and refers to them as `chudail`. On a trip out with his married friend,  he convinces them to divorce their wives but to his surprise he falls in love with Rani.He gets married to her within a week, only to realise that she is actually a ghost (chudail).What will Jallaludin`s next plan of action be? Will he be able to fight against Rani or will he succumb to the fear?",
+     minfo:"Jallaludin thinks all women are evil and refers to them as `chudail`. On a trip out with his married friend,he convinces them to divorce their wives but to his surprise he falls in love with Rani.He gets married to her within a week, onlyto realise that she is actually a ghost (chudail).What will Jallaludin`s next plan of action be? Will he be able to fight against Rani or will he succumb to the fear?",
      mtime:"2h 34m",
     cinema:"In Cinemas",
     date:"15 March,2024",
+
+     cast:[
+      {
+        cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/gippy-grewal-18404-17-12-2021-06-58-27.jpg",
+        name:"Gippy Grewal",
+       role:"as Jallaludin ",
+      },
+      {
+        cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/sargun-mehta-1066825-30-01-2017-07-40-56.jpg",
+        name:"Sargun Mehta",
+        role:"Actor",
+      },
+      {
+        cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/roopi-gill-1263571-24-12-2018-02-07-32.jpg",
+        name:"Roopi Gill",
+        role:"Actor",
+       }
+    ],
+    crew:[
+        {
+          img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/vikas-vashisht-2018421-1651238508.jpg",
+          name:"Vikas Vashisht",
+          role:"Director",
+       },
+        {
+           img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/ravi-dubey-16823-26-04-2017-16-20-28.jpg",
+          name:"Ravi Dubey",
+           role:"Producer",
+        },
+        {
+          img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/jaani-iein082810-15-03-2022-12-35-35.jpg",
+           name:"Jaani",
+           role:"Producer",
+         },
+        {
+           img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/amberdeep-singh-1044303-13-01-2017-02-46-42.jpg",
+           name:"Amberdeep Singh",
+          role:"Writer",
+        },
+        {
+          img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/avvy-sra-2023169-1666937032.jpg",
+          name:"Avvy Sra",
+          role:"Musician",
+         }
+        ]
   },
     {
       mname:"Pind Aala School",
@@ -32,10 +77,50 @@ import StarRatingApp from './StarRatingApp';
       desc:"Comedy/Drama",
       link:"https://www.youtube.com/watch?v=COM14tdK86E",
       minfo:"The story of a master who has just taken charge of the school in Pind who tries different things to ensure that the children belonging to this school have a bright future.",
-     mtime:"",
-     cinema:"Releasing on 3 May,2024",
-     date:"",
+     mtime:"1h54m",
+     cinema:"No watch options",
+     date:"3 May,2024",
+     cast:[
+      {
+        cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/preet-harpal-30992-13-05-2019-11-58-58.jpg",
+        name:"Preet Harpal",
+        role:"Actor",
+      },
+      {
+        cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/harsimran-oberoi-2035257-1710338510.jpg",
+        name:"Harsimran Oberoi",
+        role:"Actor",
+      },
+      {
+        cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/golu-majhe-wala-2035258-1710338617.jpg",
+        name:"Golu Majhe Wala",
+        role:"Actor",
+      },
+      {
+        cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/gurteg-singh-guri-2035259-1710338684.jpg",
+        name:"Gurteg Singh Guri",
+        role:"Actor",
+      }
+     ],
+     crew:[
+      {
+      img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/ranjit-singh-fateh-2035287-1710412256.jpg",
+      name:'Ranjit Singh (Fateh)',
+      role:'Director',
+      },
+      {
+        img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/tejinder-singh-dhiman-2035286-1710412181.jpg",
+        name:'Tejinder Singh Dhiman',
+        role:'Producer',
+        },
+        {
+          img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/taj-1082592-1702876574.jpg",
+          name:'Taj',
+          role:'Writer',
+          },
+     ]
     },
+    
     {
       mname:"Blackia2",
       img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/blackia-2-et00366835-1691663197.jpg",
@@ -45,6 +130,35 @@ import StarRatingApp from './StarRatingApp';
     mtime:"2h 14m",
     cinema:"No Watch Options",
     date:"8 March,2024",
+    cast:[
+        {
+         cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/dev-kharoud-19574-1655210777.jpg",
+         name:'Dev Kharoud',
+         role:'as Gama',
+        },
+        {
+          cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/japji-khaira-3155-1693223702.jpg",
+          name:'Japji Khaira',
+          role:'Actor',
+         },
+         {
+          cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/aarushi-sharma-1264256-08-01-2019-04-11-30.jpg",
+          name:'Aarushi Sharma',
+          role:'Actor',
+         }
+    ],
+    crew:[
+      {
+     img:'https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/navaniat-singh-18411-28-08-2018-03-07-54.jpg',
+     name:"Navaniat Singh",
+     role:"Director",
+      },
+      {
+        img:'https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/vivek-ohri-1267141-23-04-2019-04-44-24.jpg',
+        name:"Vivek Ohri",
+        role:"Producer",
+         }
+    ]
     },
     {
       mname:"Shinda Shinda No Papa",
@@ -52,9 +166,44 @@ import StarRatingApp from './StarRatingApp';
       desc:"Comedy/Drama",
        link:"https://www.youtube.com/watch?v=Vbq1jflpHyU",
        minfo:"Shinda Shinda No Papa is a Punjabi movie starring Gippy Grewal and Shinda Grewal in prominent roles. It is directed by Amarpreet Chhabra forming part of the crew.",
-       mtime:"",
-       cinema:"Releasing on 10 May,2024",
-       date:"",
+       mtime:"2h 15m",
+       cinema:"In Cinemas",
+       date:"10 May,2024",
+       cast:[
+        {
+       cimg:'https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/gippy-grewal-18404-17-12-2021-06-58-27.jpg',
+       name:'Gippy Grewal',
+       role:'Actor',
+        },
+        {
+          cimg:'https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/shinda-grewal-2021535-1661163648.jpg',
+          name:'Shinda Grewal',
+          role:'Actor',
+           },
+           
+           {
+            cimg:'https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/hina-khan-2036553-1713853945.jpg',
+            name:'Hina Khan',
+            role:'Actor',
+             },
+      ],
+      crew:[
+        {
+        img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/amarpreet-gs-chhabra-1044302-1666198429.jpg",
+        name:"Amarpreet G.S. Chhabra",
+        role:"Director"
+        },
+        {
+          img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/ravneet-kaur-grewal-iein082657-11-09-2017-17-05-13.jpg",
+          name:"Ravneet Kaur Grewal",
+          role:"Producer"
+          },
+          {
+            img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/naresh-kathuria-1044305-20-07-2017-13-04-59.jpg",
+            name:"Naresh Kathooria",
+            role:"Writer"
+            },
+      ]
       },
     {
       mname:"Rose Rosy Te Gulab",
@@ -65,6 +214,35 @@ import StarRatingApp from './StarRatingApp';
      mtimw:"",
      cinema:"Releasing on 24 May,2024",
      date:"",
+     cast:[
+      {
+      cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/gurnam-bhullar-1070776-08-03-2019-11-22-53.jpg",
+      name:"Gurnam Bhullar",
+      role:"as Gulab"
+    },
+    {
+      cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/mahi-sharma-1081913-1712140863.jpg",
+      name:'Mahi Sharma',
+      role:'as Rosy'
+    },
+    {
+      cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/pranjal-dahiya-2036045-1712118935.jpg",
+      name:'Pranjal Dahiya',
+      role:'as Rose'
+    }
+    ],
+    crew:[
+      {
+     img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/manvir-brar-2017633-1647417676.jpg",
+     name:"Manvir Brar",
+     role:"Director"
+      },
+      {
+        img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/gurnam-bhullar-1070776-08-03-2019-11-22-53.jpg",
+        name:"Gurnam Bhullar",
+        role:"Producer"
+      }
+    ]
 
     },
 
@@ -79,6 +257,50 @@ import StarRatingApp from './StarRatingApp';
     mtime:"2h 16m",
     cinema:"No Watch Options",
     date:"29 June,2023",
+    cast:[
+     {
+      cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/gippy-grewal-18404-17-12-2021-06-58-27.jpg",
+      name:"Gippy Grewal",
+      role:"Actor"
+     },
+     {
+     cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/sonam-bajwa-40182-13-06-2019-02-40-40.jpg",
+     name:"Sonam Bajwa",
+     role:"Actor"
+     },
+     {
+      cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/shinda-grewal-2021535-1661163648.jpg",
+      name:"Shinda Grewal",
+      role:"Actor"
+      },
+      {
+        cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/jaswinder-bhalla-9040-24-03-2017-17-34-51.jpg",
+        name:"Jaswinder Bhalla",
+        role:"Actor"
+        },
+    ],
+    crew:[
+      {
+        img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/smeep-kang-30776-18-07-2019-04-16-44.jpg",
+        name:"Smeep Kang",
+        role:"Director"
+      },
+      {
+        img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/ravneet-kaur-grewal-iein082657-11-09-2017-17-05-13.jpg",
+        name:"Ravneet Kaur Grewal",
+        role:"Producer"
+      },
+      {
+        img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/naresh-kathuria-1044305-20-07-2017-13-04-59.jpg",
+        name:"Naresh Kathooria",
+        role:"Writer"
+      },
+      {
+        img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/jaani-iein082810-15-03-2022-12-35-35.jpg",
+        name:"Jaani",
+        role:"Musician, Lyricist"
+      },
+    ]
     },
     {
       mname:"Buhe Bariyan",
@@ -89,6 +311,40 @@ import StarRatingApp from './StarRatingApp';
     mtime:"2h 10m",
     cinema:"No Watch Options",
     date:'15 Sep,2023',
+    cast:[
+    {
+      cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/neeru-bajwa-1583-24-02-2017-01-37-51.jpg",
+      name:"Neeru Bajwa",
+      role:"Actor"
+    },
+    {
+      cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/nirmal-rishi-8449-1710338767.jpg",
+      name:"Nirmal Rishi",
+      role:"Actor"
+    },
+    {
+      cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/rubina-bajwa-1080425-1661260013.jpg",
+      name:"Rubina Bajwa",
+      role:"Actor"
+    },
+    {
+      cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/simran-chahal-2030066-1691650298.jpg",
+      name:"Simran Chahal",
+      role:"Actor"
+    },
+    ],
+    crew:[
+      {
+        img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/uday-pratap-singh-1059768-1651240988.jpg",
+        name:"Uday Pratap Singh",
+        role:"Director"
+      },
+      {
+        img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/santosh-subhash-thite-1268964-12-07-2019-10-42-50.jpg",
+        name:"Santosh Subhash Thite",
+        role:"Producer"
+      },
+    ]
     },
     {
       mname:"Jeonde Raho Bhoot Ji",
@@ -99,6 +355,35 @@ import StarRatingApp from './StarRatingApp';
     mtime:"1h 52m",
     cinema:"In Cinemas",
     date:"12 Apr,2024",
+    cast:[
+       {
+        cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/binnu-dhillon-10933-17-12-2018-04-55-51.jpg",
+        name:"Binnu Dhillon",
+        role:"Actor",
+       },
+       {
+        cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/smeep-kang-30776-18-07-2019-04-16-44.jpg",
+        name:"Smeep Kang",
+        role:"Actor",
+       },
+       {
+        cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/b-n-sharma-1061952-10-12-2018-03-02-36.jpg",
+        name:"B. N. Sharma",
+        role:"Actor",
+       }
+    ],
+    crew:[
+      {
+       img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/smeep-kang-30776-18-07-2019-04-16-44.jpg",
+       name:"Smeep Kang",
+       role:"Director, Producer"
+      },
+      {
+        img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/raju-verma-2033268-1704368027.jpg",
+        name:"Raju Verma",
+        role:"Dialogue Writer"
+       }
+    ],
     },
 {
 mname:"Furteela",
@@ -107,20 +392,35 @@ desc:"Drama,Romantic",
 link:"https://www.youtube.com/watch?v=WW1Q-wikGAw",
 minfo:"A dramatic college love story that explores love, heartbreak, and the journey to self-discovery.",
 mtime:"1h 55m",
-cinema:"Releasing on 26 Apr, 2024",
-date:"",
+cinema:"No watch options",
+date:"26 Apr,2024",
+cast:[
+{
+ cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/jassi-gill-1044028-06-01-2017-05-47-16.jpg",
+ name:"Jassie Gill",
+ role:"Actor"
+},
+{
+  cimg:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/amyra-dastur-37405-04-05-2020-04-44-00.jpg",
+  name:"Amyra Dastur",
+  role:"Actor"
+ }
+],
+crew:[
+{
+img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/amar-hundal-2014509-27-09-2021-12-50-19.jpg",
+name:'Amar Hundal',
+role:"Director"
+},
+{
+  img:"https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/sukh-kamboj-2033706-1705575319.jpg",
+  name:'Sukh Kamboj',
+  role:"Cinematographer"
+  }
+]
 },
 
-{
-mname:"Kaale Angrej",
-img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/kaale-angrej-et00395717-1713771997.jpg",
-desc:"Action,Thriller",
-link:"https://www.youtube.com/watch?v=a-Lo0wr_Nbs",
-minfo:"The story depicts the harassment, scams, and difficulties faced by people.",
-mtime:"2h 11m",
-cinema:"Releasing on 26 Apr, 2024",
-date:"",
-},
+
 // {
 //   mname:"Shayar",
 //   img:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/shayar-et00388568-1708691149.jpg",
@@ -150,7 +450,7 @@ const navigate =useNavigate();
            if(filterMovies(value.mname)){
           return(
             <Col key={index} id={index}  className={style.pics} > 
-              <Card style={{borderRadius:'10px'}}>
+              <Card style={{borderRadius:'10px',width:"35vh"}}>
                 <div  onClick={()=>{navigate("/Inner",{ state: {value} })}}>
                 <img className={style.card}  src={value.img} alt={value.mname}></img>
                 </div>
@@ -190,7 +490,7 @@ const navigate =useNavigate();
   {soon.map((value,index)=>{
           return(
             <Col key={index}   className={style.pics}          >
-              <Card style={{borderRadius:'10px'}}>
+              <Card style={{borderRadius:'10px',width:'35vh'}}>
                <div onClick={()=>{navigate("/Inner",{ state: {value} })}}>
                <img className={style.card} src={value.img}></img>
                </div>
